@@ -2,10 +2,13 @@
     --component-background: #2D2D2D;
 }
 
-
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
 .container{
     width: 95%;
-    height: 95%;
+    height: 75%;
     margin-top: 2%;
 }
 
@@ -20,8 +23,9 @@
 }
 
 .row1 div, .row2 div{
-    border: 1px solid black;
     border-radius: 5px;
-    background: var(--component-background);
+    background: var(--component-background);    
 }
-
+.row1 .first-card{
+    padding: 3%;
+}

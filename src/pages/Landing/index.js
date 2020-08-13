@@ -1,5 +1,5 @@
 import React from 'react';
-import Header_Card1 from '../../components/Card1'
+import Header from '../../components/Header'
 
 import './styles.css';
 
@@ -9,7 +9,7 @@ function Landing() {
         <div className="container">
             <div className="row1">
                 <div className="first-card">
-                    <Header_Card1 />
+                    <Header />
                 </div>
                 <div className="second-card">teste2</div>
                 <div className="third-card">teste3</div>
