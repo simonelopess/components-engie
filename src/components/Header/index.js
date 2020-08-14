@@ -1,6 +1,8 @@
 import React from 'react';
+import data from '../../lib/util';
 
 import './index.css';
+
 
 function Header(){
     return (
@@ -16,7 +18,7 @@ function Header(){
                     </div>           
                 </div>
                 <div>
-                    <p className="logo">Equipe Op. Crítica</p>
+                    <p className="status">Equipe Op. Crítica</p>
                 </div>            
             </header>
             <div className="info">
@@ -39,7 +41,7 @@ function Header(){
             </div>
             <div className="operatingTime">
                 <p>Funcionamento Total Até Última Manutenção</p>
-                <div className="total-operatingTime">1306 horas </div>
+                <div className="total-operatingTime">1306 h </div>
             </div>
         </>
     )
