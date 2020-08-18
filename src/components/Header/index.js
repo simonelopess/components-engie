@@ -1,50 +1,64 @@
-import React from 'react';
-import data from '../../lib/util';
-
+import React, { Component } from 'react';
 import './index.css';
 
+class Header extends React.Component{
 
-function Header(){
-    return (
-        <>
-            <header>
-                <div className="select-block">
-                    <select name="select-list">
-                        <option value="chiller">YK Chiller</option>
-                        <option value="test">YK Test</option>
-                    </select>    
-                    <div className="local">
-                        <span>Área: </span><span className="local">Balcão Principal</span>
-                    </div>           
+    constructor(props){
+        super(props)
+        this.state={
+            item: ""
+        }
+    }
+
+    alterarItem = e =>{
+        this.setState({item: e.target.value})
+        console.log({item: e.target.value})
+    }
+
+    render(){
+        return (
+            <>
+                <header>
+                    <div className="select-block">
+                        <select name="select-list" value={this.state.item} onChange={this.alterarItem} >
+                            <option value="item1">{this.props.text}</option>
+                            <option value="item2">Item2</option>
+                            <option value="item3">Item3</option>
+                        </select>    
+                        <div className="local">
+                            <span>Área: </span><span className="local">{this.props.local}</span>
+                        </div>           
+                    </div>
+                    <div>
+                        <p className="status">{this.props.status}</p>
+                    </div>            
+                </header>
+                <div className="info">
+                    <div className="serial">
+                        <p className="serial-tag">Serial</p>
+                        <p className="serial-number">{this.props.serialNumber}</p>
+                    </div>
+                    <div className="date-install">
+                        <p className="date-install-tag">Data de Instalação</p>
+                        <p className="date-install-number">{this.props.dateInstall}</p>
+                    </div>
+                    <div className="date-concert">
+                        <p className="date-lastConcert-tag">Última Manutenção</p>
+                        <p className="date-lastConcert-number">{this.props.dateLastConcert}</p>
+                    </div>
                 </div>
-                <div>
-                    <p className="status">Equipe Op. Crítica</p>
-                </div>            
-            </header>
-            <div className="info">
-                <div className="serial">
-                    <p className="serial-tag">Serial</p>
-                    <p className="serial-number">345-755-MMF</p>
+                <div className="operatingTime">
+                    <p>Tempo Atual de Funcionamento</p>
+                    <div className="current-operatingTime">{this.props.currentDay}d {this.props.currentTime}h {this.props.currentMinutes}m {this.props.currentSeconds}s </div>
                 </div>
-                <div className="date-install">
-                    <p className="date-install-tag">Data de Instalação</p>
-                    <p sclassName="date-install-number">02/11/2006</p>
+                <div className="operatingTime">
+                    <p>Funcionamento Total Até Última Manutenção</p>
+                    <div className="total-operatingTime">{this.props.operatingTime}h </div>
                 </div>
-                <div className="date-concert">
-                    <p className="date-lastConcert-tag">Última Manutenção</p>
-                    <p className="date-lastConcert-number">06/07/2019</p>
-                </div>
-            </div>
-            <div className="operatingTime">
-                <p>Tempo Atual de Funcionamento</p>
-                <div className="current-operatingTime">16d 14h 12m 32s </div>
-            </div>
-            <div className="operatingTime">
-                <p>Funcionamento Total Até Última Manutenção</p>
-                <div className="total-operatingTime">1306 h </div>
-            </div>
-        </>
-    )
+            </>
+        )
+    }
 }
+
 
 export default Header;

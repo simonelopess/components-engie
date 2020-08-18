@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { Component } from 'react';
 import "./assets/styles/index.css"
-import Routes from './routes';
+import Landing from './pages/Landing'
 
 
-function App(){
-    return <Routes />
+class App extends Component{
+    render(){
+        return (
+            <div className="App">
+               <Landing />
+            </div>
+        )
+    }
 }
 
 export default App;

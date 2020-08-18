@@ -9,15 +9,21 @@ function Landing() {
         <div className="container">
             <div className="row1">
                 <div className="first-card">
-                    <Header />
+                    <Header
+                        text="YK Teste"
+                        local="Balcão Principal"
+                        status="Operação Crítica"
+                        serialNumber="345-755-MMF"
+                        dateInstall="02/11/2006"
+                        dateLastConcert="06/07/2019"
+                        currentDay="16"
+                        currentTime="14"
+                        currentMinutes="12"
+                        currentSeconds="32"
+                        operatingTime="1306"
+                    />
                 </div>
                 <div className="second-card">teste2</div>
-                <div className="third-card">teste3</div>
-            </div>
-            <div className="row2">
-                <div className="fourth-card"></div>
-                <div className="fifth-card"></div>
-                <div className="sexth-card"></div>
             </div>
         </div>
     )

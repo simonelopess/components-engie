@@ -29,7 +29,9 @@ header{
     height: 80px;
     text-align: center;
     align-items: center;
+    overflow: hidden;
 }
+
 
 .info{
     margin-top: 5%;

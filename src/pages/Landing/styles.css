@@ -12,17 +12,16 @@ body{
     margin-top: 2%;
 }
 
-.row1, 
-.row2
+.row1
 {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;    
+    grid-template-columns: 480px 480px;    
     height: 45%;
     gap: 0.5%;
     margin-top: 0.5%;
 }
 
-.row1 div, .row2 div{
+.row1 div{
     border-radius: 5px;
     background: var(--component-background);    
 }
