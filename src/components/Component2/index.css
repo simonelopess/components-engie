@@ -25,6 +25,9 @@
     padding: 5%;
 }
 
+.temperaturas-row1 div p:first-child, .temperaturas-row2 div p:first-child{
+    font-size: 1.75em;
+}
 .status-temp{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
