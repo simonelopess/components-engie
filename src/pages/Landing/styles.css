@@ -25,6 +25,6 @@ body{
     border-radius: 5px;
     background: var(--component-background);    
 }
-.row1 .first-card{
+.row1 .first-card, .row1 .second-card{
     padding: 3%;
 }

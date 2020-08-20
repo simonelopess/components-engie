@@ -1,7 +1,9 @@
 import React from 'react';
-import Header from '../../components/Header'
+import Component1 from '../../components/Component1';
+import Component2 from '../../components/Component2';
 
 import './styles.css';
+
 
 function Landing() {
     return (
@@ -9,7 +11,7 @@ function Landing() {
         <div className="container">
             <div className="row1">
                 <div className="first-card">
-                    <Header
+                    <Component1
                         text="YK Teste"
                         local="Balcão Principal"
                         status="Operação Crítica"
@@ -23,7 +25,9 @@ function Landing() {
                         operatingTime="1306"
                     />
                 </div>
-                <div className="second-card">teste2</div>
+                <div className="second-card">
+                  <Component2/>
+                </div>
             </div>
         </div>
     )

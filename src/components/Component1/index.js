@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './index.css';
 
-class Header extends React.Component{
+class Component1 extends React.Component{
 
     constructor(props){
         super(props)
@@ -12,7 +12,7 @@ class Header extends React.Component{
 
     alterarItem = e =>{
         this.setState({item: e.target.value})
-        console.log({item: e.target.value})
+        
     }
 
     render(){
@@ -61,4 +61,4 @@ class Header extends React.Component{
 }
 
 
-export default Header;
+export default Component1;
