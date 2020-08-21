@@ -48,15 +48,19 @@
     text-align: end;
     margin-right: auto;
     padding-top: 2%;
-    
-    
 }
 
-.red{
-    color: #000;
+
+.item-status:last-child, .item-status:nth-child(4), .item-status:nth-child(5){ 
+    margin-top: 3%;
 }
 
-.green{
-    color: rgb(21, 107, 21);
+
+.problema{
+    color: red !important;
+}
+
+.ligado{
+    color: rgb(18, 163, 18) !important;
 }
 

@@ -39,28 +39,28 @@ class Component2 extends React.Component{
                 </div>
                 <span className="quebra"></span>
                 <div className="status-temp">
-                    <div>
-                        <p className="item-status">Sujo</p>
-                        <p>Diferencial <br/> Filtro de Ar</p>
+                    <div className="item-status">
+                        <p className="problema">Sujo</p>
+                        <p>Diferencial<br/> Filtro de Ar</p>
                     </div>
-                    <div>
-                        <p className="item-status">Desligado</p>
+                    <div className="item-status">
+                        <p className="problema">Desligado</p>
                         <p>Corrente <br/> ventilação <br/> condensadora</p>
                     </div>
-                    <div>
-                        <p className="item-status">Desligado</p>
+                    <div className="item-status">
+                        <p className="problema">Desligado</p>
                         <p>corrente comprenssor </p>
                     </div>
-                    <div>
-                        <p className="item-status">Ligado</p>
+                    <div className="item-status">
+                        <p className="ligado">Ligado</p>
                         <p>Diferencial <br/> de ventilação</p>
                     </div>
-                    <div>
-                        <p className="item-status">Ligado</p>
+                    <div className="item-status">
+                        <p className="ligado">Ligado</p>
                         <p>Corrente <br/> de ventilação <br/> condesadora 2</p>
                     </div>
-                    <div>
-                        <p className="item-status">Ligado</p>
+                    <div className="item-status">
+                        <p className="ligado">Ligado</p>
                         <p>Corrente <br/> comprenssor 2</p>
                     </div>
                     
